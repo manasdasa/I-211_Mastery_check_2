@@ -37,14 +37,14 @@ def check_for_majority(tally, total_votes):
     return None
 
 def print_tally(tally, round_num):
-    print(f"\n🔄 Round {round_num} Results:")
+    print(f"\n Round {round_num} Results:")
     for candidate, votes in tally.items():
         print(f"{candidate} received {votes} votes.")
     print("-" * 40)
 
 def ranked_choice_voting(candidates, num_votes):
     ballots = generate_ballots(candidates, num_votes)
-    print(f"✅ {num_votes} ballots generated.")
+    print(f" {num_votes} ballots generated.")
     print("Sample Ballots:")
     print("Ballot 1:", ballots[0])
     print("Ballot 2:", ballots[1])
@@ -58,11 +58,11 @@ def ranked_choice_voting(candidates, num_votes):
 
         winner = check_for_majority(tally, len(ballots))
         if winner:
-            print(f"🏆 Winner: {winner} with majority of votes.")
+            print(f" Winner: {winner} with majority of votes.")
             break
 
         candidate_to_remove = find_candidate_to_eliminate(tally)
-        print(f"❌ Eliminating {candidate_to_remove} (fewest votes).")
+        print(f" Eliminating {candidate_to_remove} (fewest votes).")
         remaining_candidates.remove(candidate_to_remove)
         ballots = eliminate_candidate(ballots, candidate_to_remove)
         round_num += 1
