@@ -66,7 +66,9 @@ def ranked_choice_voting(candidates, num_votes):
         ballots = eliminate_candidate(ballots, candidate_to_remove)
         round_num += 1
 
-if __name__ == "__main__":
-    candidates = ["SpongeBob", "Bluey", "Owlet", "Frogger", "Luigi", "Moana", "Barbie"]
-    num_votes = 1000
-    ranked_choice_voting(candidates, num_votes)
+After Runnning the simulation
+
+candidates = ["SpongeBob", "Bluey", "Owlet", "Frogger", "Luigi", "Moana", "Barbie"]
+num_votes = 1000
+
+ranked_choice_voting(candidates, num_votes)
