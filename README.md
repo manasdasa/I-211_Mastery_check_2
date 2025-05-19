@@ -32,6 +32,6 @@ This Python project simulates a Ranked Choice Voting (RCV) system. It generates 
 Clone the repository and run the Python script:
 
 ```bash
-git clone https://github.com/username/ranked-choice-voting-simulation.git
-cd ranked-choice-voting-simulation
-python ranked_choice_voting.py
+git clone https://github.com/manasdasa/I-211_Mastery_check_2.git
+cd I-211_Mastery_check_2
+python3 Mast_check2.py
